@@ -1,0 +1,6 @@
+<h1 class="text-center">Articles</h1>
+<ul class="container d-flex flex-column">
+<% @articles.each do |art| %>
+  <%= link_to art.title, article_path(art), class: "link-info" %>
+<% end %>
+</ul>
